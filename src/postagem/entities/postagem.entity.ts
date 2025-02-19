@@ -1,8 +1,8 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { IsNotEmpty } from "class-validator";
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 import { Tema } from "../../tema/entities/tema.entity";
 import { Usuario } from './../../usuario/entities/usuario.entity';
+import { IsNotEmpty } from "class-validator";
 
 @Entity({name: "tb_postagens"})
 export class Postagem {
